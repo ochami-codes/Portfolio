@@ -1,31 +1,10 @@
-import React from "react";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-
-export default function App() {
+function App() {
   return (
-    <div className="app">
-      <header className="site-header">
-        <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <main>
-        <section id="home"><Hero /></section>
-        <section id="about"><About /></section>
-        <section id="projects"><Projects /></section>
-        <section id="contact"><Contact /></section>
-      </main>
-
-      <footer className="site-foot">
-        © {new Date().getFullYear()} Your Name — Built with React + Vite
-      </footer>
+    <div style={{ padding: "20px", fontSize: "24px" }}>
+      <h1>Hello from Vite + React!</h1>
+      <p>If you can see this on Vercel, your setup is working.</p>
     </div>
   );
 }
+
+export default App;
