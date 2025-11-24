@@ -3,18 +3,16 @@ import profilePic from "../assets/profile.jpg";
 export default function About() {
   return (
     <section className="px-6 py-16 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+      <h2 className="text-3xl font-bold text-white mb-8">About Me</h2>
 
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-        {/* Profile Image */}
         <img
           src={profilePic}
           alt="Ian Ochami"
           className="w-32 h-32 rounded-full border-4 border-blue-600 object-cover"
         />
 
-        {/* Text Content */}
-        <div className="text-gray-700 space-y-4">
+        <div className="text-gray-300 space-y-4">
           <p className="leading-relaxed fade-slide">
             I'm a dedicated developer from Kenya with a strong passion for crafting
             clean, modern, and meaningful digital experiences. I enjoy turning ideas
