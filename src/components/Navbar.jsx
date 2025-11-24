@@ -35,10 +35,10 @@ export default function Navbar() {
       <div className="md:hidden">
         <button onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? (
-            <HiX className="w-6 h-6 text-gray-300 transition-transform duration-200" />
-          ) : (
-            <HiMenu className="w-6 h-6 text-gray-300 transition-transform duration-200" />
-          )}
+  <HiXMark className="w-6 h-6 text-gray-300 transition-transform duration-200" />
+) : (
+  <HiBars3 className="w-6 h-6 text-gray-300 transition-transform duration-200" />
+)}
         </button>
       </div>
 
