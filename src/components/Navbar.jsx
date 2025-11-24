@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi2"; // <- updated
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,18 +25,10 @@ export default function Navbar() {
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-6 text-gray-300 font-medium">
-        <Link to="/" className="transition-colors duration-200 hover:text-blue-400">
-          Home
-        </Link>
-        <Link to="/about" className="transition-colors duration-200 hover:text-blue-400">
-          About
-        </Link>
-        <Link to="/projects" className="transition-colors duration-200 hover:text-blue-400">
-          Projects
-        </Link>
-        <Link to="/contact" className="transition-colors duration-200 hover:text-blue-400">
-          Contact
-        </Link>
+        <Link to="/" className="transition-colors duration-200 hover:text-blue-400">Home</Link>
+        <Link to="/about" className="transition-colors duration-200 hover:text-blue-400">About</Link>
+        <Link to="/projects" className="transition-colors duration-200 hover:text-blue-400">Projects</Link>
+        <Link to="/contact" className="transition-colors duration-200 hover:text-blue-400">Contact</Link>
       </div>
 
       {/* Mobile Hamburger */}
@@ -55,34 +47,10 @@ export default function Navbar() {
         className={`absolute top-full left-0 w-full bg-gray-900 shadow-lg flex flex-col items-center py-4 space-y-4 md:hidden transition-all duration-300 ease-out
         ${menuOpen ? "opacity-100 max-h-screen" : "opacity-0 max-h-0 overflow-hidden"}`}
       >
-        <Link
-          onClick={() => setMenuOpen(false)}
-          to="/"
-          className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
-        >
-          Home
-        </Link>
-        <Link
-          onClick={() => setMenuOpen(false)}
-          to="/about"
-          className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
-        >
-          About
-        </Link>
-        <Link
-          onClick={() => setMenuOpen(false)}
-          to="/projects"
-          className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
-        >
-          Projects
-        </Link>
-        <Link
-          onClick={() => setMenuOpen(false)}
-          to="/contact"
-          className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
-        >
-          Contact
-        </Link>
+        <Link onClick={() => setMenuOpen(false)} to="/" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">Home</Link>
+        <Link onClick={() => setMenuOpen(false)} to="/about" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">About</Link>
+        <Link onClick={() => setMenuOpen(false)} to="/projects" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">Projects</Link>
+        <Link onClick={() => setMenuOpen(false)} to="/contact" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">Contact</Link>
       </div>
     </nav>
   );
