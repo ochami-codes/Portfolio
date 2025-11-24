@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { HiMenu, HiXMark } from "react-icons/hi2";
+import { HiBars3, HiXMark } from "react-icons/hi2";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
