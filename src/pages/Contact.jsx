@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaUser, FaEnvelope, FaCommentDots } from "react-icons/fa6-solid";
+import { FaUser, FaEnvelope, FaCommentDots } from "react-icons/fa6";
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
