@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { FaUser, FaEnvelope, FaCommentDots } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaCommentDots } from "react-icons/fa6-solid";
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your submission logic here
     setSuccess(true);
     setTimeout(() => setSuccess(false), 4000);
   };
