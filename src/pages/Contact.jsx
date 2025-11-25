@@ -4,20 +4,37 @@ import { FaUser, FaEnvelope, FaCommentDots, FaPhone } from "react-icons/fa6";
 export default function Contact() {
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
 
-    fetch("https://getform.io/f/ac21e58f-c588-4acb-bcfc-28fa05d61109", {
-      method: "POST",
-      body: new FormData(form),
-    })
-      .then(() => {
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+      access_key: "ac21e58f-c588-4acb-bcfc-28fa05d61109", // your Web3Forms key
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      if (result.success) {
         setSuccess(true);
         form.reset();
         setTimeout(() => setSuccess(false), 4000);
-      })
-      .catch((err) => console.error("Form submission error:", err));
+      } else {
+        console.error("Web3Forms error:", result);
+      }
+    } catch (err) {
+      console.error("Submission failed:", err);
+    }
   };
 
   return (
@@ -26,7 +43,6 @@ export default function Contact() {
 
       {/* FORM */}
       <form className="space-y-6" onSubmit={handleSubmit}>
-
         {/* Name */}
         <div className="relative group">
           <FaUser className="absolute top-3 left-3 text-gray-400 group-focus-within:text-blue-400 transition-colors" />
@@ -146,4 +162,4 @@ export default function Contact() {
       </div>
     </section>
   );
-      }
+}
