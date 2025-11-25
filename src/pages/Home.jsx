@@ -23,7 +23,7 @@ export default function Home() {
       {/* Buttons */}
       <div className="mt-8 flex justify-center gap-4 flex-wrap">
         <a
-          href="/Ian-Ochami-CV.pdf"
+          href="/CV.pdf"
           download
           className="bg-blue-600 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-700 btn-hover-shadow transition"
         >
