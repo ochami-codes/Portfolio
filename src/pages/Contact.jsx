@@ -55,14 +55,15 @@ export default function Contact() {
             focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             required
           />
-          <label
-            htmlFor="name"
-            className="absolute left-10 top-3 text-gray-400 pointer-events-none transition-all
-            duration-200 peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-400
-            peer-placeholder-shown:top-3 peer-placeholder-shown:text-base"
-          >
-            Your Name
-          </label>
+        <label
+  htmlFor="name"
+  className="absolute left-10 top-3 text-gray-400 pointer-events-none transition-all
+    duration-200 peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400
+    peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-400
+    peer-valid:top-0 peer-valid:text-xs peer-valid:text-blue-400"
+>
+  Your Name
+</label>
         </div>
 
         {/* Email */}
@@ -78,13 +79,14 @@ export default function Contact() {
             required
           />
           <label
-            htmlFor="email"
-            className="absolute left-10 top-3 text-gray-400 pointer-events-none transition-all
-            duration-200 peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-400
-            peer-placeholder-shown:top-3 peer-placeholder-shown:text-base"
-          >
-            Your Email
-          </label>
+  htmlFor="name"
+  className="absolute left-10 top-3 text-gray-400 pointer-events-none transition-all
+    duration-200 peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400
+    peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-400
+    peer-valid:top-0 peer-valid:text-xs peer-valid:text-blue-400"
+>
+  Your Email 
+</label>
         </div>
 
         {/* Message */}
@@ -98,14 +100,15 @@ export default function Contact() {
             focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             required
           ></textarea>
-          <label
-            htmlFor="message"
-            className="absolute left-10 top-3 text-gray-400 pointer-events-none transition-all
-            duration-200 peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-400
-            peer-placeholder-shown:top-3 peer-placeholder-shown:text-base"
-          >
-            Your Message
-          </label>
+         <label
+  htmlFor="name"
+  className="absolute left-10 top-3 text-gray-400 pointer-events-none transition-all
+    duration-200 peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-400
+    peer-placeholder-shown:text-base peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-400
+    peer-valid:top-0 peer-valid:text-xs peer-valid:text-blue-400"
+>
+  Your Message 
+</label>
         </div>
 
         {/* Submit */}
