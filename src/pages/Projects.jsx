@@ -9,14 +9,9 @@ export default function Projects() {
 
   const projects = [
     {
-      name: "Project Name",
-      description: "Short description of the project. Highlight what makes it unique or impactful.",
-      link: "#",
-    },
-    {
-      name: "Another Project",
-      description: "Brief summary of the project. Show the purpose and technology used.",
-      link: "#",
+      name: "Second Advent Ministries",
+      description: "A responsive, visually engaging web platform showcasing digital evangelism content, interactive Bible studies, and dynamic resources, built with clean UI/UX and modern web technologies.",
+      link: "https://advent-project.vercel.app",
     },
     // more projects to be added here
   ];
