@@ -15,7 +15,7 @@ export default function About() {
           fadeIn ? "opacity-100" : "opacity-0"
         }`}
       >
-        About Me
+        About
       </h2>
 
       <div
@@ -27,10 +27,9 @@ export default function About() {
         <img
           src={profilePic}
           alt="Ian Ochami"
-          className="w-32 h-32 rounded-full border-4 border-blue-600 object-cover"
+          className="w-40 h-40 rounded-full border-4 border-blue-600 object-cover"
         />
-
-        {/* Text Content */}
+{/* Text Content */}
         <div className="text-gray-200 space-y-4">
           <p className="leading-relaxed">
             I'm a dedicated developer from Kenya with a strong passion for crafting
@@ -44,6 +43,25 @@ export default function About() {
             development, use digital tools to advance evangelism, and build solutions
             that uplift communities both spiritually and technologically.
           </p>
+<div className="flex flex-wrap gap-2 pt-2">
+  {[
+    "React",
+    "Node.js",
+    "Express",
+    "JavaScript",
+    "SQL",
+    "REST APIs",
+    "Authentication",
+    "RBAC"
+  ].map(skill => (
+    <span
+      key={skill}
+      className="bg-gray-800 px-3 py-1 rounded-full text-sm"
+    >
+      {skill}
+    </span>
+  ))}
+</div>
 
           <div className="mt-4">
             <a
@@ -55,6 +73,7 @@ export default function About() {
             </a>
           </div>
         </div>
+        
       </div>
     </section>
   );
