@@ -95,7 +95,7 @@ export default function Home() {
         ">
 
           <a
-            href="/Ochami_Resume(1).pdf"
+            href="/my-cv.pdf"
             download
             className="
               bg-blue-600
