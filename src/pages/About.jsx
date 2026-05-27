@@ -100,7 +100,7 @@ export default function About() {
               {/* Button */}
               <div className="pt-4">
                 <a
-                  href="/Ochami_Resume(1).pdf"
+                  href="/my-cv.pdf"
                   download
                   className="
                     inline-block
