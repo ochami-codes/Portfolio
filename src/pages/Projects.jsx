@@ -14,7 +14,7 @@ export default function Projects() {
         "A scalable multi-tenant church management platform designed for membership administration, financial tracking, and secure organizational workflows. Features authentication, role-based access control, and architecture supporting multiple churches within one system.",
       tech:
         "React • Node.js • Express • SQL • Authentication • RBAC • Multi-tenancy",
-      link: "https://your-churchapp-link.com",
+      link: "https://cms-ian-ochami-s-projects.vercel.app",
     },
 
     {
