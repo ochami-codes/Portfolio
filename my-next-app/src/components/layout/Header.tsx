@@ -20,7 +20,17 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-[var(--color-background)] border-b border-[var(--color-border)]">
+    <header
+      className="
+  sticky
+  top-0
+  z-50
+  bg-[var(--color-background)]/90
+  backdrop-blur-md
+  border-b
+  border-[var(--color-border)]
+"
+    >
       <nav className="max-w-6xl mx-auto px-6 py-4">
         {/* Header bar */}
         <div className="flex items-center justify-between">
