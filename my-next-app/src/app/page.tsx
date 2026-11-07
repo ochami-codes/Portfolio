@@ -90,7 +90,7 @@ export default function Home() {
           flex-wrap
         ">
           <a
-            href="/files/CV.pdf"
+            href="/files/Ian_Ochami_Full_Stack.pdf"
             download
             className="
               bg-[var(--color-primary)]
